@@ -43,7 +43,7 @@ body {
   position: relative;
   display: block;
   text-decoration: none;
-  color: #dedce1;
+  color: #fff;
   font-size: 20px;
 }
 
@@ -77,7 +77,7 @@ body {
 #menuBtn .bar {
   width: 26px;
   height: 3px;
-  background-color: #dedce1;
+  background-color: #fff;
   margin: 5px auto;
   border-radius: 5px;
   transition: 0.4s cubic-bezier(1, 0.2, 0.2, 1);
@@ -137,7 +137,7 @@ main .info {
 .socialMedia a img {
   font-size: 24px;
   padding-right: 20px;
-  color: #dedce1;
+  color: #fff;
   transition: 0.4s;
 }
 
@@ -156,7 +156,7 @@ main .info {
     height: calc(100vh - 70px);
     top: 70px;
     right: -250px;
-    background-color:#6070FF;
+    background-color: #6070ff;
     border-radius: 30% 0% 0% 80%;
     display: flex;
     align-items: center;
@@ -172,16 +172,13 @@ main .info {
 
   .menu ul li a {
     position: relative;
-    display: block;
     text-decoration: none;
-    color: #dedce1;
-    font-size: 20px;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
     display: flex;
     align-items: center;
-    color: #ffffff;
+    color: #fff;
   }
 
   .menu ul li:nth-child(1) {
