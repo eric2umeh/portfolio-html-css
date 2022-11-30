@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <div class="logo"><h2>My Logo</h2></div>
+
+            <ul>
+                <li><a href="#" class="active" onclick="markMenuItem(this)">Home</a></li>
+                <li><a href="#" onclick="markMenuItem(this)">About</a></li>
+                <li><a href="#" onclick="markMenuItem(this)">Services</a></li>
+                <li><a href="#" onclick="markMenuItem(this)">Portfolio</a></li>
+                <li><a href="#" onclick="markMenuItem(this)">Contact</a></li>
+            </ul>
+
+            <div id="menuBtn" class="active">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="info">
+                <h1>I’m Mariane Glad to see you!</h1>
+                <span class="infos">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</span>
+                <p>LET’S CONNECT</p>
+                <div class="socialMedia">
+                    <a href=""> <img src="assets/twitter.svg" alt=""></a>
+                    <a href=""> <img src="assets/linkedin.svg" alt=""></a>
+                    <a href=""> <img src="assets/mail.svg" alt=""></a>
+                    <a href=""> <img src="assets/github.svg" alt=""></a>
+                    <a href=""> <img src="assets/fingers.svg" alt=""></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="text/javascript">
+        var menu_btn = document.querySelector('#menuBtn');
+        var menu = document.querySelector('.menu ul');
+        var menuItems = document.querySelectorAll('.menu ul li a');
+
+        menu_btn.addEventListener('click', function(){
+            menu_btn.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+        for (i = 0; i < menuItems.length; i++){
+            menuItems[i].addEventListener('click', function(){
+                menu.btn.classList.remove('active');
+                menu.classList.remove('active')
+            })
+        }
+        function markMenuItem(menuItem){
+            for(var i = 0; i < menuItems.length; i++){
+                menuItems[i].classList.remove('active');
+            }
+            menuItem.classList.add('active');
+        }
+    </script>
+</body>
+</html>
