@@ -27,6 +27,7 @@ body {
   color: #6070ff;
   font-style: normal;
   font-size: 18px;
+  text-decoration: none;
 }
 
 .menu ul {
@@ -155,7 +156,7 @@ main .info {
     height: calc(100vh - 70px);
     top: 70px;
     right: -250px;
-    background-color: #232323;
+    background-color:#6070FF;
     border-radius: 30% 0% 0% 80%;
     display: flex;
     align-items: center;
@@ -167,6 +168,20 @@ main .info {
   .menu ul li {
     padding: 20px;
     letter-spacing: 2px;
+  }
+
+  .menu ul li a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #dedce1;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
   }
 
   .menu ul li:nth-child(1) {
