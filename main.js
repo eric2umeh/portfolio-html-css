@@ -2,6 +2,7 @@ const menuBtn = document.querySelector('#menuBtn');
 const menu = document.querySelector('.menu ul');
 const menuItems = document.querySelectorAll('.menu ul li a');
 
+// Toggle Nav menu
 menuBtn.addEventListener('click', () => {
   menuBtn.classList.toggle('active');
   menu.classList.toggle('active');
@@ -13,6 +14,8 @@ for (let i = 0; i < menuItems.length; i++) {
     menu.classList.remove('active');
   });
 }
+
+// Active Nav Menu after click
 // eslint-disable-next-line no-unused-vars
 function markMenuItem(menuItem) {
   // eslint-disable-next-line no-plusplus
