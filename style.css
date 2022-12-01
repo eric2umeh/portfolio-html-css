@@ -35,6 +35,21 @@ article ul li {
   border-radius: 24px;
 }
 
+.socialMedia li {
+  list-style: none;
+}
+
+.work-pill li {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
 .menu ul li {
   display: inline-table;
   padding: 0 20px;
@@ -137,15 +152,15 @@ main .info {
   margin-bottom: 24px;
 }
 
+.about-tech-list img {
+  margin-bottom: 16px;
+}
+
 .socialMedia li a img {
   font-size: 24px;
   padding-right: 20px;
   color: #fff;
   transition: 0.4s;
-}
-
-.socialMedia li {
-  list-style: none;
 }
 
 .socialMedia li a img:hover {
@@ -231,17 +246,6 @@ article {
   margin-bottom: 28px;
 }
 
-.work-pill li {
-  padding: 4px 12px;
-  background: #ebebff;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-}
-
 .work-button {
   font-weight: 500;
   font-size: 17px;
@@ -274,8 +278,6 @@ article {
 .about-head {
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #091e42;
   display: flex;
   flex-direction: column;
@@ -344,10 +346,6 @@ article {
   margin-bottom: 36px;
 }
 
-.about-tech-list img {
-  margin-bottom: 16px;
-}
-
 .about-others-1 {
   display: flex;
   justify-content: space-between;
@@ -367,9 +365,14 @@ article {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  /* Navigation Section*/
+  /* Navigation Section */
   .menu #menuBtn {
     display: block;
+  }
+
+  .about-social li {
+    width: 1%;
+    margin-top: -10px;
   }
 
   .menu ul {
@@ -440,13 +443,9 @@ article {
     padding: 114px 20px;
   }
 
-  .about1, .about-2 {
+  .about1,
+  .about-2 {
     width: 80%;
-  }
-
-  .about-social li {
-    width: 1%;
-    margin-top: -10px;
   }
 
   .about-button {
@@ -455,14 +454,12 @@ article {
   }
 
   .about-2-desc {
-    color: #000000;
+    color: #000;
   }
 
   .about-tech {
     grid-template-columns: repeat(1, 1fr);
   }
-
-
 
   .about-tech-list {
     display: flex;
