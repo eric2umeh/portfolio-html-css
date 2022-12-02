@@ -472,4 +472,9 @@ article {
     margin-top: 30px;
     justify-content: space-between;
   }
+
+  /* Work Section */
+  .work {
+    grid-template-columns: 1fr;
+  }
 }
