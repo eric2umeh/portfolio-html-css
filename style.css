@@ -21,13 +21,18 @@ body {
   align-items: center;
   padding: 0 30px;
   height: 70px;
+  margin-top: -30px;
 }
 
 .container .logo {
+  position: relative;
   color: #6070ff;
   font-style: normal;
   font-size: 18px;
   text-decoration: none;
+  /* background-color: red; */
+  top: 20px;
+  margin-left: 30px;
 }
 
 .menu ul {
