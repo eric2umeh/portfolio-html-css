@@ -4,12 +4,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
 .container {
   width: 100%;
   height: 100vh;
 }
 
 /* Nav Section */
+header,
+main {
+  background-color: #fff !important;
+}
+
 .container .menu {
   display: flex;
   justify-content: space-between;
@@ -23,6 +32,10 @@
   font-style: normal;
   font-size: 18px;
   text-decoration: none;
+}
+
+main {
+  border-radius: 0 0 0 100px;
 }
 
 .menu ul {
@@ -153,6 +166,8 @@ main .info {
 }
 
 .about-tech-list img {
+  margin-top: 20px;
+  margin-left: 20px;
   margin-bottom: 16px;
 }
 
@@ -168,24 +183,24 @@ main .info {
 }
 
 /* Work Section */
-article {
-  background-color: #e5e5e5;
-}
 
 #work {
-  padding: 70px;
+  margin: 20px;
 }
 
 .work {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin: 64px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 140px 0;
 }
 
 .work:nth-last-child(2n + 1) {
-  grid-auto-flow: dense;
-  direction: rtl;
+  /* grid-auto-flow: dense;
+  direction: rtl; */
 }
 
 .item1,
@@ -219,8 +234,7 @@ article {
 .item4 .work-info,
 .item2 .work-pill,
 .item4 .work-pill {
-  display: flex;
-  flex-direction: row-reverse;
+  display: flex; /* flex-direction: row-reverse; */
 }
 
 #work-media {
@@ -301,10 +315,6 @@ article {
   margin-bottom: 22px;
 }
 
-.about-social {
-  margin-left: -10px;
-}
-
 .about-button {
   font-weight: 500;
   font-size: 17px;
@@ -335,7 +345,7 @@ article {
 
 .about-tech {
   display: grid;
-  grid-template-columns: repeat(3, 33.3%);
+  grid-template-columns: repeat(3, 33.33%);
   list-style: none;
   gap: 12px;
 }
@@ -368,11 +378,6 @@ article {
   /* Navigation Section */
   .menu #menuBtn {
     display: block;
-  }
-
-  .about-social li {
-    width: 1%;
-    margin-top: -10px;
   }
 
   .menu ul {
@@ -439,12 +444,15 @@ article {
   /* Work Section */
   .work {
     grid-template-columns: 1fr;
-    margin: 114px 0;
-    justify-content: center;
+    gap: 30px;
+    margin: 80px 0;
   }
 
-  #work {
-    padding: 24px;
+  .work-img-1,
+  .work-img-2,
+  .work-img-3,
+  .work-img-4 {
+    width: 100%;
   }
 
   .item1,
@@ -463,11 +471,6 @@ article {
     display: grid;
     grid-template-columns: 1fr;
     padding: 114px 20px;
-  }
-
-  .about1,
-  .about-2 {
-    width: 80%;
   }
 
   .about-button {
