@@ -436,6 +436,28 @@ article {
     font-size: 50px;
   }
 
+  /* Work Section */
+  .work {
+    grid-template-columns: 1fr;
+    margin: 114px 0;
+    justify-content: center;
+  }
+
+  #work {
+    padding: 24px;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    margin-top: -20px;
+  }
+
+  .work-info {
+    gap: 5px;
+  }
+
   /* About Section */
   .about {
     display: grid;
@@ -471,10 +493,5 @@ article {
   .about-others-1 {
     margin-top: 30px;
     justify-content: space-between;
-  }
-
-  /* Work Section */
-  .work {
-    grid-template-columns: 1fr;
   }
 }
