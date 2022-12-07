@@ -363,6 +363,15 @@ main .info {
   border-bottom: 1px solid #dfe1e6;
 }
 
+footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 12px;
+}
+
 .about-others-1 p {
   font-weight: 500;
   font-size: 20px;
@@ -384,16 +393,7 @@ footer h2 {
   line-height: 52px;
   align-items: center;
   text-align: center;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-
-footer p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
+  color: #fff;
   margin-bottom: 12px;
 }
 
@@ -606,7 +606,7 @@ form span {
   }
 
   footer input[name='message'] {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   form span {
