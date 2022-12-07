@@ -192,6 +192,12 @@ Example:
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
+👤 **Lethabo**
+
+- GitHub: [@lethaboMot](https://github.com/githubhandle)
+- Twitter: [@profcipher](https://twitter.com/twitterhandle)
+- LinkedIn: [Lethabo Motloung](https://linkedin.com/in/linkedinhandle)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
