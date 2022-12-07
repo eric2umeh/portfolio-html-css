@@ -371,7 +371,97 @@ main .info {
   margin-bottom: 22px;
 }
 
-/* Footer Section */
+/* Contact Section */
+footer.contact {
+  height: 846px;
+  background: #6070ff;
+  border-radius: 100px 0 0 0;
+  padding: 142px 435px 127px;
+}
+
+footer h2 {
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 12px;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+footer input {
+  height: 48px;
+  border-radius: 2px;
+}
+
+footer input[name='message'] {
+  height: 170px;
+  margin-bottom: 27px;
+}
+
+::placeholder {
+  position: absolute;
+  height: 18px;
+  left: 16px;
+  right: 38px;
+  top: calc(50% - 18px / 2);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  align-items: center;
+  color: #172b4d;
+}
+
+footer input[name='message']::placeholder {
+  position: absolute;
+  left: 16px;
+  right: 38px;
+  top: 15px;
+  bottom: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+form span {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  padding: 10px 12px;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.contact-button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -495,6 +585,31 @@ main .info {
 
   .about-others-1 {
     margin-top: 30px;
+    margin-bottom: 60px;
     justify-content: space-between;
+  }
+
+  /* Contact Section */
+  footer.contact {
+    margin-top: -75px;
+    padding: 83px 24px 32px 24px;
+    background: url(assets/contact-mobile.svg) no-repeat right top;
+    background-color: #6070ff;
+  }
+
+  footer p {
+    margin-bottom: 62px;
+  }
+
+  footer input {
+    border-radius: 8px;
+  }
+
+  footer input[name='message'] {
+    margin-bottom: 0px;
+  }
+
+  form span {
+    justify-content: flex-start;
   }
 }
