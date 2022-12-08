@@ -34,13 +34,14 @@ main {
   font-size: 18px;
   text-decoration: none;
   line-height: 20px;
-  animation: rotation 1s;
+  animation: rotation 2s;
 }
 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -177,10 +178,18 @@ main .info {
   margin-bottom: 24px;
 }
 
+article img {
+  transition: all 0.2s ease-in-out;
+}
+
 .about-tech-list img {
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 16px;
+}
+
+article img:hover {
+  transform: scale(1.1);
 }
 
 .socialMedia li a img {
@@ -209,14 +218,6 @@ main .info {
   background-color: #fff;
   border-radius: 30px;
   margin: 140px 0;
-}
-
-article img {
-  transition: all 0.2s ease-in-out;
-}
-
-article img:hover {
-  transform: scale(1.1);
 }
 
 .work:nth-last-child(2n + 1) {
