@@ -201,9 +201,13 @@ main .info {
   margin: 140px 0;
 }
 
+article img.work-img-1:hover {
+  transform: scale(1.1);
+}
+
 .work:nth-last-child(2n + 1) {
-  /* grid-auto-flow: dense;
-  direction: rtl; */
+  grid-auto-flow: dense;
+  direction: rtl;
 }
 
 .item1,
