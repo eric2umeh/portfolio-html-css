@@ -17,13 +17,14 @@ body {
 header,
 main {
   background-color: #fff !important;
+  padding: 0 90px;
+  padding-bottom: 30px;
 }
 
 .container .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
   height: 30px;
 }
 
@@ -32,6 +33,18 @@ main {
   font-style: normal;
   font-size: 18px;
   text-decoration: none;
+  line-height: 20px;
+  animation: rotation 2s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 main {
@@ -165,10 +178,18 @@ main .info {
   margin-bottom: 24px;
 }
 
+article img {
+  transition: all 0.2s ease-in-out;
+}
+
 .about-tech-list img {
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 16px;
+}
+
+article img:hover {
+  transform: scale(1.1);
 }
 
 .socialMedia li a img {
@@ -186,6 +207,7 @@ main .info {
 
 #work {
   margin: 20px;
+  padding: 0 90px;
 }
 
 .work {
@@ -199,8 +221,8 @@ main .info {
 }
 
 .work:nth-last-child(2n + 1) {
-  /* grid-auto-flow: dense;
-  direction: rtl; */
+  grid-auto-flow: dense;
+  direction: rtl;
 }
 
 .item1,
@@ -272,7 +294,7 @@ main .info {
   outline: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .work-button:hover {
@@ -284,7 +306,7 @@ main .info {
 .about {
   background-color: #fff;
   border-radius: 0 120px 0 0;
-  padding: 140px;
+  padding: 140px 140px 180px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -327,7 +349,7 @@ main .info {
   outline: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .about-button:hover {
@@ -383,10 +405,16 @@ footer p {
 
 /* Contact Section */
 footer.contact {
-  height: 846px;
-  background: #6070ff;
+  background: url(assets/contact1.png) no-repeat center center;
+  background-size: contain;
+  overflow: hidden;
+  background-color: #6070ff;
   border-radius: 100px 0 0 0;
-  padding: 142px 435px 127px;
+  margin-top: -90px;
+}
+
+.con-div {
+  padding: 142px 400px 127px;
 }
 
 footer h2 {
@@ -458,7 +486,7 @@ form span {
   outline: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .contact-button:hover {
