@@ -202,8 +202,8 @@ main .info {
 }
 
 .work:nth-last-child(2n + 1) {
-  /* grid-auto-flow: dense;
-  direction: rtl; */
+   grid-auto-flow: dense;
+  direction: rtl; 
 }
 
 .item1,
