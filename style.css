@@ -34,6 +34,16 @@ main {
   font-size: 18px;
   text-decoration: none;
   line-height: 20px;
+  animation: rotation 1s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 main {
@@ -201,7 +211,11 @@ main .info {
   margin: 140px 0;
 }
 
-article img.work-img-1:hover {
+article img {
+  transition: all 0.2s ease-in-out;
+}
+
+article img:hover {
   transform: scale(1.1);
 }
 
@@ -279,7 +293,7 @@ article img.work-img-1:hover {
   outline: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .work-button:hover {
@@ -334,7 +348,7 @@ article img.work-img-1:hover {
   outline: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .about-button:hover {
@@ -471,7 +485,7 @@ form span {
   outline: none;
   background-color: #fff;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .contact-button:hover {
