@@ -271,7 +271,6 @@ article img:hover {
 .item2 .work-info,
 .item2 .work-pill,
 .item4 .work-info,
-.item4 .work-button,
 .item4 .work-pill {
   display: flex;
   flex-direction: row-reverse;
@@ -296,6 +295,10 @@ article img:hover {
   align-self: start;
 }
 
+.item2 .work-button,
+.item4 .work-button {
+  margin-right: 250px;
+}
 #work-media {
   font-weight: 500;
   font-size: 18px;
@@ -607,6 +610,11 @@ form span {
   .item3,
   .item4 {
     margin-top: -20px;
+  }
+
+  .item2 .work-button,
+  .item4 .work-button {
+    margin-right: 0;
   }
 
   .work-info {
