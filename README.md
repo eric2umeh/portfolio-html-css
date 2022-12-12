@@ -15,6 +15,7 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -63,6 +64,13 @@
 > View my portfolio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Deployment -->
+
+### Deployment
+
+Deployment You can deploy this project using: 
+``` https://eric2umeh.github.io/portfolio-html-css/ ```   
 
 <!-- AUTHORS -->
 
