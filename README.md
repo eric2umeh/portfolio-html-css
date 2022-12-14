@@ -86,6 +86,10 @@ Deployment You can deploy this project using:
 
 - GitHub: [@LethaboMot](https://github.com/githubhandle)
 
+👤 **Matama**
+
+- GitHub: [@danielmatama](https://github.com/githubhandle)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
