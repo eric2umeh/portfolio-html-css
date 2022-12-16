@@ -144,6 +144,9 @@ I would like to thank Microverse community
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Loom Walkthrough Presentation -->
+> https://docs.google.com/document/d/1dsAKXkL14TDoJy36_CLy8rV8vEhQ5DU_5utTIsZJ5rw/edit#
+
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
