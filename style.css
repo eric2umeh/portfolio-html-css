@@ -592,6 +592,7 @@ form span {
     gap: 0;
     flex-direction: column;
     background: #6070ff;
+    mix-blend-mode: multiply;
     height: 100vh;
     width: 100%;
     text-align: center;
