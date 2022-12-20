@@ -1,26 +1,12 @@
-const menuBtn = document.querySelector('#menuBtn');
-const menu = document.querySelector('.menu ul');
-const menuItems = document.querySelectorAll('.menu ul li a');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-// Toggle Nav menu
-menuBtn.addEventListener('click', () => {
-  menuBtn.classList.toggle('active');
-  menu.classList.toggle('active');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
 });
-// eslint-disable-next-line no-plusplus
-for (let i = 0; i < menuItems.length; i++) {
-  menuItems[i].addEventListener('click', () => {
-    menu.btn.classList.remove('active');
-    menu.classList.remove('active');
-  });
-}
 
-// Active Nav Menu after click
-// eslint-disable-next-line no-unused-vars
-function markMenuItem(menuItem) {
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < menuItems.length; i++) {
-    menuItems[i].classList.remove('active');
-  }
-  menuItem.classList.add('active');
-}
+document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navMenu.classList.remove('active');
+}));
