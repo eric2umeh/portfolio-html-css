@@ -65,7 +65,7 @@
       </main>
 
       <!-- Work Section -->
-      <section id="works" class="project-section"> </section>
+      <section id="works" class="works"> </section>
 
       <!-- About Section -->
       <section id="abouts">
@@ -146,33 +146,46 @@
       </footer>
 
       <!-- modal -->
-      <div class="modal-example">
-        <div class="modal-head">
-          <h1 class="projectname"></h1>
-          <button type="button" class="closeModal">&times;</button>
-        </div>
-        <div class="modal__body">
-          <div class="short_desc">
-            <h4 class="company"></h4>
-            <span></span>
-            <h4 class="role"></h4>
-            <span></span>
-            <h6 class="year"></h6>
+      <div id="my-modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="modalClose">&times;</span>
+            <h2 class="work-title"></h2>
+            <p class="work-info">
+              <span id="work-media"></span>
+              <img class="dot-img" src="assets/dot.svg" alt="." />
+              <span id="work-tech"></span>
+              <img class="dot-img" src="assets/dot.svg" alt="." />
+              <span id="work-year"></span>
+            </p>
           </div>
-          <img src="#" alt="modal image" class="modal-img">
-          <div class="project-desc">
-            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
-            <div class="desc_btn">
-              <ul class="project__lang">
-                <li><a href="" class="languages" title="html">html</a></li>
-                <li><a href="" class="languages" title="css">css</a></li>
-                <li><a href="#" class="languages" title="javascript">javascript</a></li>
-              </ul>
-              <div class="buttons">
-                <button type="button" class="work-button">See live <i class="fa fa-external-link" aria-hidden="true"></i></button>
-                <button type="button" class="work-button button-1">See source <i class="fa fa-github"></i></button>
+          <div class="modal-body">
+            <img class="modal-img" src="assets/work1.svg" alt="Uber Project" />
+          </div>
+          <div class="modal-footer">
+              <p class="work-desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
+              </p>
+              <div class="modal-pill">
+                <ul class="work-pill">
+                  <li>html</li>
+                  <li>css</li>
+                  <li>javascript</li>
+                </ul>
+                <ul class="work-pill wp-1">
+                  <li>github</li>
+                  <li>ruby</li>
+                  <li>Bootstraps</li>
+                </ul>
+                <div class="modal-buttons">
+                  <button class="modal-button-1"> 
+                    <span>See live</span><img src="assets/live.svg" alt=""/>
+                  </button>
+                  <button class="modal-button-2">
+                    <span>See Source</span><img src="assets/source.svg" alt=""/>
+                  </button>
+                </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
@@ -181,5 +194,3 @@
     <script type="text/javascript" src="js/modal.js"></script>
   </body>
 </html>
-
-
