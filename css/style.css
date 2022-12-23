@@ -101,7 +101,7 @@ article ul li {
 }
 
 .work-pill li {
-  padding: 4px 12px;
+  padding: 4px 0;
   background: #ebebff;
   border-radius: 8px;
   font-weight: 500;

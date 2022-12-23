@@ -110,32 +110,3 @@ document.querySelector('.closeModal').addEventListener('click', () => {
   document.querySelector('.container').classList.remove('blur');
   document.querySelector('.showcase').classList.remove('blur');
 });
-
-const email = document.querySelector('#useremail');
-const validationAlert = document.querySelector('.alert');
-const contactForm = document.querySelector('.contact-me');
-contactForm.addEventListener('submit', (event) => {
-  const regex = /[A-Z]/;
-  const emailContent = email.value;
-  if (regex.test(emailContent)) {
-    validationAlert.innerHTML = 'Your email address should not contain uppercase letters';
-    event.preventDefault();
-  }
-});
-
-const nameField = document.querySelector('#username');
-const emailAddressField = document.querySelector('#useremail');
-const messageField = document.querySelector('#usermessage');
-
-contactForm.addEventListener('input', () => {
-  const userData = {
-    name: nameField.value,
-    email: emailAddressField.value,
-    message: messageField.value,
-  };
-  localStorage.setItem('userData', JSON.stringify(userData));
-});
-const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
-nameField.value = userDataFromLocalStorage.name;
-emailAddressField.value = userDataFromLocalStorage.email;
-messageField.value = userDataFromLocalStorage.message;
