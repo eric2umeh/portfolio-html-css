@@ -9,3 +9,20 @@ contact.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+const userName = document.querySelector('#name');
+const emailField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+
+contact.addEventListener('input', () => {
+  const formData = {
+    name: userName.value,
+    email: emailField.value,
+    message: messageField.value,
+  };
+  localStorage.setItem('userData', JSON.stringify(formData));
+});
+const dataStorage = JSON.parse(localStorage.getItem('userData'));
+userName.value = dataStorage.name;
+emailField.value = dataStorage.email;
+messageField.value = dataStorage.message;
