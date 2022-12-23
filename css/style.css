@@ -586,6 +586,11 @@ form span {
   background-color: #6070ff;
 }
 
+.errorMsg {
+  /* Azeez here ....*/
+  margin-top: 5%;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   /* Navigation Section */
