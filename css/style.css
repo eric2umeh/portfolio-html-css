@@ -587,7 +587,7 @@ form span {
 }
 
 .errorMsg {
-  /* Azeez here ....*/
+  color: rgb(233, 27, 27);
   margin-top: 5%;
 }
 
