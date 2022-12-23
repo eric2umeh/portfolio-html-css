@@ -101,7 +101,7 @@ article ul li {
 }
 
 .work-pill li {
-  padding: 4px 12px;
+  padding: 4px 0;
   background: #ebebff;
   border-radius: 8px;
   font-weight: 500;
@@ -238,10 +238,12 @@ article img:hover {
 }
 
 /* Work Section */
-
-#work {
-  margin: 20px;
-  padding: 0 90px;
+#works {
+  display: grid;
+  padding: 0 84px;
+  gap: 88px;
+  background-color: #e5e5e5;
+  margin: 114px 0;
 }
 
 .work {
@@ -282,8 +284,13 @@ article img:hover {
 .work-pill {
   display: flex;
   gap: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   list-style: none;
+  text-decoration: none;
+}
+
+li a.skill {
+  text-decoration: none;
 }
 
 .work-button {
@@ -299,6 +306,11 @@ article img:hover {
   background-color: #fff;
   cursor: pointer;
   transition: all 0.5s;
+}
+
+.work-button:hover {
+  color: #fff;
+  background-color: #6070ff;
 }
 
 .item2 .work-info,
@@ -348,9 +360,26 @@ article img:hover {
   color: #6b778c;
 }
 
-.work-button:hover {
-  color: #fff;
-  background-color: #6070ff;
+.skill {
+  position: static;
+  width: 29px;
+  height: 16px;
+  left: 12px;
+  top: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  margin: 0.5px 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 /* About Section */
@@ -557,6 +586,11 @@ form span {
   background-color: #6070ff;
 }
 
+.errorMsg {
+  color: rgb(233, 27, 27);
+  margin-top: 5%;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   /* Navigation Section */
@@ -643,6 +677,10 @@ form span {
   }
 
   /* Work Section */
+  #works {
+    padding: 0 20px 0 20px;
+  }
+
   .work {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -741,3 +779,5 @@ form span {
     margin-left: 33%;
   }
 }
+
+/* Modal & Works */

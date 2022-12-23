@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta charset="UTF-8" />
     <!-- Font Awesome -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" />
     <title>Eric's Portfolio</title>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="heads">
         <!-- Nav Section -->
         <nav class="navbar">
           <a href="#" class="logo">My Logo</a>
@@ -64,115 +65,7 @@
       </main>
 
       <!-- Work Section -->
-      <section id="works">
-        <div id="work">
-          <article class="work" id="work-img-1">
-            <img class="work-img-1" src="assets/work1.svg" alt="Nature Project" />
-            <div class="item1">
-              <h2 class="work-title">Tonic</h2>
-              <p class="work-info">
-                <span id="work-media">CANOPY</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-tech">Back End Dev</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-year">2015</span>
-              </p>
-              <p class="work-desc">
-                A daily selection of privately personalized reads; no accounts or sign-ups required.
-              </p>
-              <ul class="work-pill">
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-              <button class="work-button">See Project</button>
-            </div>
-          </article>
-
-          <article class="work" id="work-img-2">
-            <img
-              class="work-img-2"
-              src="assets/work2.svg"
-              alt="Art Project"
-            />
-            <div class="item2">
-              <h2 class="work-title">Multi-Post Stories</h2>
-              <p class="work-info">
-                <span id="work-media">CANOPY</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-tech">Back End Dev</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-year">2015</span>
-              </p>
-              <p class="work-desc work-desc-1">
-                Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
-              </p>
-              <ul class="work-pill">
-                <li>html</li>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-              <button class="work-button">See Project</button>
-            </div>
-          </article>
-
-          <article class="work">
-            <img
-              class="work-img-3"
-              src="assets/work3.svg"
-              alt="Facebook Project"
-            />
-            <div class="item3">
-              <h2 class="work-title">Facebook 360</h2>
-              <p class="work-info">
-                <span id="work-media">FACEBOOK</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-tech">Full Stack Dev</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-year">2015</span>
-              </p>
-              <p class="work-desc">
-                Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
-              </p>
-              <ul class="work-pill">
-                <li>html</li>
-                <li>Ruby on rails</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-              <button class="work-button">See Project</button>
-            </div>
-          </article>
-
-          <article class="work">
-            <img
-              class="work-img-4"
-              src="assets/work4.svg"
-              alt="Uber Project"
-            />
-            <div class="item4">
-              <h2 class="work-title">Uber Navigation</h2>
-              <p class="work-info">
-                <span id="work-media">Uber</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-tech">Back End Dev</span>
-                <img class="dot-img" src="assets/dot.svg" alt="." />
-                <span id="work-year">2018</span>
-              </p>
-              <p class="work-desc">
-                A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
-              </p>
-              <ul class="work-pill">
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
-              </ul>
-              <button class="work-button">See Project</button>
-            </div>
-          </article>
-        </div>
-      </section>
+      <section id="works" class="project-section"> </section>
 
       <!-- About Section -->
       <section id="abouts">
@@ -245,13 +138,50 @@
             <form class="contact-form" action="https://formspree.io/f/meqdygkn" method="POST">
                 <input type="text" id="name" name="name" placeholder="Yemerias" required maxlength="30" >
                 <input type="email" id="email" name="email" placeholder="natajayanj14@gmail.com" required >
-                <input type="text" id="message" name="message" placeholder="Write your message here" required maxlength="500" >
-                <span><button class="contact-button" type="submit">Get In Touch</button></span>
+                <textarea type="text" id="message" name="message" placeholder="Write your message here" cols="30" rows="10" required maxlength="500"></textarea>
+                <p class="errorMsg"></p>
+                <span><button class="contact-button" type="submit">Get in touch</button></span>
             </form>
             <div id="contact-line"><span></span></div>
         </div>
       </footer>
 
-    <script type="text/javascript" src="main.js"></script>
+      <!-- modal -->
+      <div class="modal-example">
+        <div class="modal-head">
+          <h1 class="projectname"></h1>
+          <button type="button" class="closeModal">&times;</button>
+        </div>
+        <div class="modal__body">
+          <div class="short_desc">
+            <h4 class="company"></h4>
+            <span></span>
+            <h4 class="role"></h4>
+            <span></span>
+            <h6 class="year"></h6>
+          </div>
+          <img src="#" alt="modal image" class="modal-img">
+          <div class="project-desc">
+            <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+            <div class="desc_btn">
+              <ul class="project__lang">
+                <li><a href="" class="languages" title="html">html</a></li>
+                <li><a href="" class="languages" title="css">css</a></li>
+                <li><a href="#" class="languages" title="javascript">javascript</a></li>
+              </ul>
+              <div class="buttons">
+                <button type="button" class="work-button">See live <i class="fa fa-external-link" aria-hidden="true"></i></button>
+                <button type="button" class="work-button button-1">See source <i class="fa fa-github"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
   </body>
 </html>
+
+
