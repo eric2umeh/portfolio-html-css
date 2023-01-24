@@ -28,9 +28,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-> This is my portfolio
-
-**[Eric's_Portfolio]** gives more detailed profile of his works and experiences 
+> This is my portfolio that gives more detailed profile of my works and experiences. This was built with Javascript, HTML & CSS.
 
 ## 🛠 Built With <a name="built-with"></a>
 
