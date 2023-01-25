@@ -8,15 +8,15 @@ const year = document.querySelector('.year');
 
 const projects = [
   {
-    name: 'Tonic',
-    imageLink: 'assets/work1.svg',
+    name: 'Summit Website',
+    imageLink: 'assets/work1.1.png',
     technologies: ['html', 'css', 'javascript'],
-    role: 'Back end dev',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
-    company: 'Canopy',
-    year: '2015',
-    sourceLink: '#',
-    demoLink: '#',
+    role: 'Front-end Developer',
+    description: 'A website showcasing various schedules and its speakers accordingly',
+    company: 'Microverse',
+    year: '2023',
+    sourceLink: 'https://github.com/eric2umeh/summit-capstone',
+    demoLink: 'https://eric2umeh.github.io/summit-capstone/',
   },
   {
     name: 'Multi-post stories',

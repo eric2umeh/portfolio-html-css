@@ -2,6 +2,11 @@
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: #091e42;
+}
+
 .modal-example {
   display: none;
   flex-direction: column;
